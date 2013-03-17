@@ -2,6 +2,8 @@
 
 <p class="author">Code read of <a href="https://github.com/muffs/Gravy/">Julian Connor's gravy.js</a> by <a href="http://truffles.me.uk">Tim Ruffles</a> (<a href="http://twitter.com/timruffles">@timruffles</a>)</p>
 
+Gravy contains good code. I've concentrated on where it could use improvement.
+
 ## Contents
 
 1. [Correctness](#correctness)
@@ -180,7 +182,7 @@ It's probably best to pass unwrapped `DOMElement`s to callbacks - using a DOM li
 
 Strong documentation, aside from the need to better justify the library.
 
-There should be more justification for why Gravy is doing it differently from Backbone. Backbone gives you a single method for validation; calling individual invalid events for attributes is something you could easily do within it, but isn't default. Here we're giving more granuarity - this should have a rationale.
+There should be more justification for why Gravy is doing it differently from Backbone. Backbone gives you a single method for validation; calling individual invalid events for attributes is something you could easily do within it, but isn't default. Here we're giving more granularity - this should have a rationale.
 
 Additionally validation should probably live on the model - if not, it'd be good to see cases where we have view-specific validations that don't make sense there.
 
