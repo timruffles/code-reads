@@ -14,16 +14,11 @@
 
 ## Correctness
 
-As far as I can see `Ratio`'s numeric components are correct and there's a strong test suite.
+As far as I can see `Ratio`'s numeric components are correct: there's a strong test suite and the alogrithms are based on another library.
 
 ### Parsing
 
 `Ratio.parse("1 // 2") == Ratio.parse(0,1)` - as `/(\d|Infinity)\s*\//` matches `1 /.*`. Probably worth checking we can handle the rest of the input.
-
-
-### Minor notes
-
-`/\d\s+[+\-]?\d/` - the second `+` isn't doing anything.
 
 
 <a id=style></a>
