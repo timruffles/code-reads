@@ -30,7 +30,7 @@ As far as I can see `Ratio`'s numeric components are correct: there's a strong t
 
 `reduce()` might be better named `simplify()` - only as `Array.reduce` etc is common in JS.
 
-`parseToArray` is hard to read - `j`, `arr` are doing a lot of different things. Since you understand hoisting, I'd just define descriptive vars in each of the branches. You could even break it into a lookup object of methods to keep each one clean and isolated.
+[parseToArray](https://github.com/LarryBattle/Ratio.js/blob/ba0234983b3bb136036e70955f87d21a34133ec6/lib/Ratio-0.3.11.js#L184) is hard to read - `j`, `arr` are doing a lot of different things. Since you understand hoisting, I'd just define descriptive vars in each of the branches. You could even break it into a lookup object of methods to keep each one clean and isolated.
 
 ```
 	toArray: {
